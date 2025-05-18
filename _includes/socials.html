@@ -1,0 +1,14 @@
+<nav id="widget-socials-container">
+  <ul id="widget-socials">
+    {%- for social in site.data.socials -%}
+    <li>
+      <a href="{{ social.url }}"
+         title="{{ social.name }}"
+         rel="me"
+         target="_blank">
+        {% include icons/{{ social.icon }} %}
+      </a>
+    </li>
+    {%- endfor -%}
+  </ul>
+</nav>
