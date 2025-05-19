@@ -1,8 +1,8 @@
-title: Bugzilla
-email: developers@bugzilla.org
-description: ""
+title: "Bugzilla"
+email: "developers@bugzilla.org"
+description: "Jekyll theme for Bugzilla websites"
 baseurl: ""
-url: "https://bugzilla.org/"
+url: "https://bugzilla.org"
 
 sass:
   sass_dir: _sass

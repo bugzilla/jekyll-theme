@@ -21,9 +21,9 @@ main {
   flex-grow: 1;
 }
 
-a { color: var(--link-text-color) }
-a:hover { color: var(--hovered-link-text-color) }
-a:visited { color: var(--visited-link-text-color) }
+a { color: var(--link-text-color); }
+a:hover { color: var(--hovered-link-text-color); }
+a:visited { color: var(--visited-link-text-color); }
 
 .sr-only { display: none; }
 
@@ -37,10 +37,10 @@ a:visited { color: var(--visited-link-text-color) }
   width: calc(100% - 32px);
 }
 
-h1 { font-size: var(--font-size-h1) }
-h2 { font-size: var(--font-size-h2) }
-h3 { font-size: var(--font-size-h3) }
-h4 { font-size: var(--font-size-h4) }
+h1 { font-size: var(--font-size-h1); }
+h2 { font-size: var(--font-size-h2); }
+h3 { font-size: var(--font-size-h3); }
+h4 { font-size: var(--font-size-h4); }
 
 #header {
   color: var(--application-header-foreground-color);
@@ -154,7 +154,7 @@ h4 { font-size: var(--font-size-h4) }
 }
 
 #navbar-nav li.dropdown > a:after {
-  content: '▾'
+  content: '▾';
 }
 
 #widget-socials-container {
@@ -213,11 +213,11 @@ h4 { font-size: var(--font-size-h4) }
 }
 
 .dropdown-menu .dropdown-item {
-  color: var(--menu-foreground-color)!important
+  color: var(--menu-foreground-color)!important;
 }
 
 .dropdown-menu .dropdown-item:hover {
-  background-color: var(--hovered-menuitem-background-color)
+  background-color: var(--hovered-menuitem-background-color);
 }
 
 .bg-bugzilla {
@@ -426,7 +426,7 @@ blockquote {
 #breadcrumbs {
   background-color: var(--secondary-application-header-background-color);
   color: var(--secondary-application-header-foreground-color);
-  font-size: var(--font-size-large)
+  font-size: var(--font-size-large);
 }
 #breadcrumbs ol {
   display: flex;
@@ -524,11 +524,11 @@ table th, table td {
 }
 
 .eighty {
-  max-width: 75%
+  max-width: 75%;
 }
 
 .twenty {
-  max-width: 25%
+  max-width: 25%;
 }
 
 @media (max-width: 800px) {
@@ -549,7 +549,7 @@ table th, table td {
 
 .warning * {
   vertical-align: middle;
-  display: inline-block
+  display: inline-block;
 }
 
 ul {
