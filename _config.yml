@@ -9,6 +9,7 @@ sass:
 
 markdown: kramdown
 plugins:
+  - jekyll-include-cache
   - jekyll-sitemap
 exclude:
   - Gemfile
