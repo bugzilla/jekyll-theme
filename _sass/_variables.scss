@@ -124,6 +124,14 @@
     --disabled-control-foreground-color: rgb(160, 161, 162);
     --scrollbar-color: rgb(190, 191, 192) var(--application-background-color);
 
+    /** Social Widget */
+    --widget-color: rgb(30, 31, 32);
+    --widget-background-color: rgba(255, 255, 255, 0.2);
+    --widget-link-color: rgb(30, 31, 32);
+    --widget-link-hover-color: rgb(210, 211, 212);
+    --widget-link-hover-background-color: rgb(var(--accent-color-blue-3));
+    --widget-border-color: rgb(60, 61, 62);
+
     /** Button */
     --primary-button-foreground-color: rgb(255, 255, 255);
     --primary-button-background-color: rgb(var(--accent-color-blue-3));
@@ -236,6 +244,14 @@
     --selected-control-background-color: rgb(60, 61, 62);
     --disabled-control-foreground-color: rgb(110, 111, 112);
     --scrollbar-color: rgb(70, 71, 72) var(--application-background-color);
+
+    /** Social Widget */
+    --widget-color: rgb(255, 255, 255);
+    --widget-background-color: rgba(30, 31, 32, 0.2);
+    --widget-link-color: rgb(210, 211, 212);
+    --widget-link-hover-color: rgb(30, 31, 32);
+    --widget-link-hover-background-color: rgb(var(--accent-color-blue-1));
+    --widget-border-color: rgb(200, 201, 202);
 
     /** Button */
     --secondary-button-background-color: rgb(70, 71, 72);
