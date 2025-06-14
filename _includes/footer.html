@@ -2,9 +2,13 @@
   <div class="inner">
     <ul id="socials">
       {%- for social in site.data.socials -%}
-      <li><a href="{{ social.url }}" title="{{ social.name }}" rel="me" target="_blank">{% include icons/{{ social.icon }} %}<span class="sr-only">{{ social.name }}</span></a></li>{%- endfor -%}
+      <li><a href="{{ social.url }}" title="{{ social.name }}" rel="me" target="_blank">{% include_cached icons/{{ social.icon }} %}<span class="sr-only">{{ social.name }}</span></a></li>{%- endfor -%}
     </ul>
-    {% capture license %}{% include icons/creative-commons.svg size="24" %}{% include icons/creative-commons-by.svg size="24" %}{% include icons/creative-commons-sa.svg size="24" %}{% endcapture %}
+    {% capture license %}
+    {% include_cached icons/creative-commons.svg size="24" %}
+    {% include_cached icons/creative-commons-by.svg size="24" %}
+    {% include_cached icons/creative-commons-sa.svg size="24" %}
+    {% endcapture %}
     <hr/>
     <div id="bottom-footer">
       <span>Copyright &copy; 1998-{{ site.time | date: "%Y" }} bugzilla.org contributors</span>
