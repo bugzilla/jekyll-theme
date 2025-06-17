@@ -1,7 +1,12 @@
 <header id="header" class="{{page.header.class}}">
   <div class="inner">
     <a id="header-brand" {% if page.header.big %}class="big"{% endif %} href="/">
-      <img id="header-logo" src="/assets/img/logo-header.svg" alt="Bugzilla Logo" width="32" height="48">
+      <img
+        id="header-logo"
+        src="{{ "/assets/img/logo-header.svg" | absolute_url }}"
+        alt="Bugzilla Logo"
+        width="32"
+        height="48">
       <span id="header-name">{{ site.title }}</span>
     </a>
     <button id="navbar-button" title="Show Nav Menu">Show Nav Menu</button>
@@ -20,18 +25,34 @@
             {% assign current = true %}
           {% endif %}
           <li class="dropdown{% if current == true %} active{% endif %}">
-            <a class="dropdown-toggle" {% if item.title %}title="{{ item.title }}"{% endif %} href="{% if item.link %}{{ item.link }}{% else %}#{% endif %}" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a
+              class="dropdown-toggle"
+              {% if item.title %}title="{{ item.title }}"{% endif %}
+              href="{% if item.link %}{{ item.link | absolute_url }}{% else %}#{% endif %}"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false">
               {{ item.name }}
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               {% for link in item.links %}
-              <a {% if link.title %}title="{{ link.title }}"{% endif %} class="dropdown-item" href="{{ link.link }}">{{ link.name }}{% if link.link == page.url %} <span class="sr-only">(current)</span>{% endif %}</a>
+              <a
+                {% if link.title %}title="{{ link.title }}"{% endif %}
+                class="dropdown-item"
+                href="{{ link.link | absolute_url }}">
+                {{ link.name }}{% if link.link == page.url %} <span class="sr-only">(current)</span>{% endif %}
+              </a>
               {% endfor %}
             </div>
           </li>
           {% else %}
           <li class="{% if item.link == page.url %} active{% endif %}">
-            <a {% if item.title %}title="{{ item.title }}"{% endif %} href="{{ item.link }}">{{ item.name }}{% if item.link == page.url %} <span class="sr-only">(current)</span>{% endif %}</a>
+            <a
+              {% if item.title %}title="{{ item.title }}"{% endif %}
+              href="{{ item.link | absolute_url }}">
+              {{ item.name }}{% if item.link == page.url %} <span class="sr-only">(current)</span>{% endif %}
+            </a>
           </li>
           {% endif %}
         {% endfor %}
@@ -51,7 +72,9 @@
     <ol>
       {% for breadcrumb in page.breadcrumbs %}
       {% if forloop.last != true or breadcrumb.name != page.title %}
-      <li><a href="{{ breadcrumb.link }}">{{ breadcrumb.name }}</a></li>
+      <li>
+        <a href="{{ breadcrumb.link | absolute_url }}">{{ breadcrumb.name }}</a>
+      </li>
       {% endif %}
       {% endfor %}
       <li class="current" aria-current="page">{{ page.title }}</li>
