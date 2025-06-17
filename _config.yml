@@ -2,7 +2,7 @@ title: Bugzilla
 email: developers@bugzilla.org
 description: ""
 baseurl: ""
-url: ""
+url: "https://bugzilla.org/"
 
 sass:
   sass_dir: _sass
