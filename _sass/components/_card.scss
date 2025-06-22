@@ -1,0 +1,25 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at https://mozilla.org/MPL/2.0/. */
+
+/* components/card */
+
+.card {
+  border: 1px solid var(--primary-region-border-color);
+  box-shadow: var(--primary-region-box-shadow);
+  background-color: var(--primary-region-background-color);
+  padding: 20px;
+  margin: 20px;
+  border-radius: var(--primary-region-border-radius);
+}
+
+.card * {
+  max-width: 100%;
+  overflow-wrap: break-word;
+}
+
+.card-body img {
+  max-width: 100%;
+  height: auto;
+}
+

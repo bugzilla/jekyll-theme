@@ -1,0 +1,35 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at https://mozilla.org/MPL/2.0/. */
+
+/* Base */
+@use "base/reset";
+@use "base/variables";
+@use "base/fonts";
+@use "base/_base";
+@use "base/utils";
+
+/* Atoms */
+@use "components/button";
+
+/* Molecules */
+@use "components/card";
+@use "components/widget";
+@use "components/form";
+
+/* Organisms */
+@use "components/navbar";
+@use "components/header";
+
+/* Miscs
+ *
+ * NOTE:
+ * This file is temporary. CSS rules, here, needs to be refactored into new
+ * elements or components. */
+@use "base/miscs";
+
+/* Documentations
+ *
+ * NOTE:
+ * - We should only load this files in development mode */
+@use "docs/docs.scss";
