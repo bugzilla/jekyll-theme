@@ -1,0 +1,53 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at https://mozilla.org/MPL/2.0/. */
+
+/* components/button */
+
+.button {
+  display: inline-block;
+  outline: 0;
+  border-radius: var(--button-border-radius);
+  border: 1px solid var(--secondary-button-border-color);
+  padding: var(--button-padding);
+  color: var(--secondary-button-foreground-color);
+  background-color: var(--secondary-button-background-color);
+  text-align: center;
+  text-decoration: none;
+}
+
+.button:hover {
+  border-color: var(--hovered-secondary-button-border-color);
+  color: var(--hovered-secondary-button-foreground-color);
+  background-color: var(--hovered-secondary-button-background-color);
+}
+
+.button:focus {
+  border-color: var(--focused-control-border-color);
+}
+
+.button:active {
+  border-color: var(--pressed-secondary-button-border-color);
+  color: var(--pressed-secondary-button-foreground-color);
+  background-color: var(--pressed-secondary-button-background-color);
+}
+
+.button.primary {
+  padding: var(--button-padding);
+  border-color: var(--primary-button-border-color);
+  color: var(--primary-button-foreground-color);
+  background-color: var(--primary-button-background-color);
+  font-weight: 500;
+}
+
+.button.primary:hover {
+  border-color: var(--hovered-primary-button-border-color);
+  color: var(--hovered-primary-button-foreground-color);
+  background-color: var(--hovered-primary-button-background-color);
+}
+
+.button.primary:active {
+  border-color: var(--pressed-primary-button-border-color);
+  color: var(--pressed-primary-button-foreground-color);
+  background-color: var(--pressed-primary-button-background-color);
+}

@@ -1,0 +1,48 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at https://mozilla.org/MPL/2.0/. */
+
+/* components/header */
+
+#header {
+  color: var(--application-header-foreground-color);
+  background-color: var(--application-header-background-color);
+}
+
+#header.sticky {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+#header .inner {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#header-brand {
+  display: flex;
+  align-items: center;
+  margin-right: 16px;
+  font-size: var(--font-size-h3);
+  color: var(--application-header-foreground-color);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#header-logo {
+  width: 32px;
+  height: 48px;
+  margin-right: 4px;
+}
+
+#header-brand.big {
+  font-size: var(--font-size-h2);
+}
+
+#header-brand.big #header-logo {
+  width: 64px;
+  height: 96px;
+}
+
