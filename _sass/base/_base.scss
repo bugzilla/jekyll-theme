@@ -182,3 +182,19 @@ main {
   display: inline-block;
 }
 
+.sr-only,
+.sr-only-focusable {
+  clip: rect(0 0 0 0);
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+}
+
+.sr-only-focusable:active,
+.sr-only-focusable:focus {
+  clip: unset;
+  left: 0.5rem;
+  top: 0.5rem;
+  padding: 0.25rem;
+}
