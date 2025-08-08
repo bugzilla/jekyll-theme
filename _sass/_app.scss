@@ -7,7 +7,6 @@
 @use "base/variables";
 @use "base/fonts";
 @use "base/_base";
-@use "base/utils";
 
 /* Atoms */
 @use "components/button";
@@ -20,13 +19,6 @@
 /* Organisms */
 @use "components/navbar";
 @use "components/header";
-
-/* Miscs
- *
- * NOTE:
- * This file is temporary. CSS rules, here, needs to be refactored into new
- * elements or components. */
-@use "base/miscs";
 
 /* Documentations
  *
