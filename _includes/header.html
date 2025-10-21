@@ -56,6 +56,7 @@
           </li>
           {% endif %}
         {% endfor %}
+        {% if site.data.socials %}
         <li class="dropdown">
           <a
             class="dropdown-toggle"
@@ -75,6 +76,7 @@
             {% endfor %}
           </div>
         </li>
+        {% endif %}
       </ul>
       <form role="search" method="get" action="https://www.google.com/cse">
         <span class="sr-only">Search bugzilla.org</span>
