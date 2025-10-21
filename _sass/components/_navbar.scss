@@ -66,6 +66,12 @@
   margin: 0;
 }
 
+#navbar-nav li a.socials {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+}
+
 #navbar-nav li a {
   padding: 8px;
   color: var(--application-header-foreground-color);
