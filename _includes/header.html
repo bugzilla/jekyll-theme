@@ -56,6 +56,25 @@
           </li>
           {% endif %}
         {% endfor %}
+        <li class="dropdown">
+          <a
+            class="dropdown-toggle"
+            href="#"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false">
+            Follow Us
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            {% for social in site.data.socials %}
+            <a class="socials" href="{{ social.url }}">
+              {% include icons/{{ social.icon }} %}
+              {{ social.name }}
+            </a>
+            {% endfor %}
+          </div>
+        </li>
       </ul>
       <form role="search" method="get" action="https://www.google.com/cse">
         <span class="sr-only">Search bugzilla.org</span>
