@@ -42,3 +42,9 @@
     }
   }
 }
+
+@media screen and (width < 1200px) {
+  #widget-socials-container {
+    display: none;
+  }
+}
