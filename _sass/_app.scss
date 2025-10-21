@@ -6,12 +6,15 @@
 @use "base/reset";
 @use "base/variables";
 @use "base/fonts";
-@use "base/_base";
+@use "base/base";
 
 /* Atoms */
 @use "components/button";
 
 /* Molecules */
+@use "components/breadcrumb";
+@use "components/pagination";
+@use "components/table";
 @use "components/card";
 @use "components/widget";
 @use "components/form";
