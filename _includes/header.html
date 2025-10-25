@@ -69,7 +69,7 @@
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             {% for social in site.data.socials %}
-            <a class="socials" href="{{ social.url }}">
+            <a class="dropdown-item socials" href="{{ social.url }}">
               {% include icons/{{ social.icon }} %}
               {{ social.name }}
             </a>
