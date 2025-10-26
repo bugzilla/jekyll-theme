@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
     spec.name     = "jekyll-theme-bugzilla"
-    spec.version  = "1.0.0"
+    spec.version  = "1.0.1"
     spec.authors  = ["Stasiek Michalski", "Danny Colin", "Bugzilla"]
     spec.summary  = "Jekyll theme for Bugzilla websites"
     spec.homepage = "https://github.com/bugzilla/jekyll-theme"
