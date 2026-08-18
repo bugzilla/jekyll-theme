@@ -7,5 +7,25 @@ layout: base
     <h1 class="title">{{ page.title }}</h1>
     {% include_cached authors.html authors=page.author %}
     {{ content }}
+
+    {% if page.comments.enabled %}
+      <h2>Comments</h2>
+      {% if page.comments.mastodon or page.comments.bluesky %}
+        <p> Reply on
+        {% if page.comments.mastodon %}
+          <a href="{{ page.comments.mastodon }}">Mastodon</a>
+        {% endif %}
+        {% if page.comments.bluesky %}
+          or <a href="{{ page.comments.bluesky }}">Bluesky</a>
+        {% endif %}
+        .</p>
+        {% include social-comments.html comments=page.comments %}
+      {% else %}
+      <p>
+        Oops! The reply links for this post haven't been set up yet. Please try
+        to reload this page in a few minutes if you want to reply.
+      </p>
+      {% endif %}
+    {% endif %}
   </div>
 </div>
